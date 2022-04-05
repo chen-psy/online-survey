@@ -109,12 +109,12 @@ var instr_fc = {
         `<p style="text-align: left">
         第一部分测验已结束。<br/>
         下面开始第二部分（共10道题目）：<br/>
-        在每次呈现的两个陈述（A和B）中，根据你认为的偏好程度做出相应的选择<br/><br/>
-        1 = 更偏向A（A更加符合我）<br/>
-        2 = 略微偏向A<br/>
-        3 = A和B同样符合我<br/>
-        4 = 略微偏向B<br/>
-        5 = 更偏向B（B更加符合我）</p>`,
+        在每次呈现的两个陈述（A和B）中，根据你认为的偏好程度做出相应的选择：<br/><br/>
+        1 = 更偏向 A （A 更加符合我）<br/>
+        2 = 略微偏向 A <br/>
+        3 = A 和 B 同样符合我<br/>
+        4 = 略微偏向 B <br/>
+        5 = 更偏向 B（B 更加符合我）</p>`,
     ],
     show_clickable_nav: true,
     allow_backward: false,
@@ -195,23 +195,23 @@ var Forced_choice = {
         stimulus: jsPsych.timelineVariable('s'),
         prompt: `
         <p style="font-size: 16pt; font-weight: normal">
-        请在这两个陈述A和B中，根据你的偏好程度做出选择<br/>
-        （1 = 更偏向A，5 = 更偏向B）</p>`,
+        请在这两个陈述 A 和 B 中，根据你的偏好程度做出选择<br/>
+        （1 = 更偏向 A，5 = 更偏向 B）</p>`,
         choices: ['1', '2', '3', '4', '5'],
         on_finish: function(data) { addRespFromButtonScale(data, 'RSES') },
         post_trial_gap: 50
     }],
     timeline_variables: [
-        { data: { i: 1 }, s: 'A.我容易感到压力过大<br/>B.我话不多' },
-        { data: { i: 2 }, s: 'A.我不喜欢引起别人的注意<br/>B.我经常忘记把东西放回原处' },
-        { data: { i: 3 }, s: 'A.我会推卸职责<br/>B.我的想象力欠佳' },
-        { data: { i: 4 }, s: 'A.我很容易被打扰<br/>B.我是聚会的核心人物' },
-        { data: { i: 5 }, s: 'A.我是个低调的人<br/>B.我注重细节' },
-        { data: { i: 6 }, s: 'A.我常把事情弄得一团糟<br/>B.我会使用晦涩的文字' },
-        { data: { i: 7 }, s: 'A.我时常感到沮丧<br/>B.我会花时间反思事情' },
-        { data: { i: 8 }, s: 'A.我和其他人在一起时感到自在<br/>B.我会同情他人的感受' },
-        { data: { i: 9 }, s: 'A.我能感受到他人的情绪<br/>B.我对我的工作很严谨' },
-        { data: { i: 10 }, s: 'A.我很少感到沮丧<br/>B.我总是主动开始谈话' },
+        { data: { i: 1 }, s: 'A. 我容易感到压力过大<br/>B. 我话不多' },
+        { data: { i: 2 }, s: 'A. 我不喜欢引起别人的注意<br/>B. 我经常忘记把东西放回原处' },
+        { data: { i: 3 }, s: 'A. 我会推卸职责<br/>B. 我的想象力欠佳' },
+        { data: { i: 4 }, s: 'A. 我很容易被打扰<br/>B. 我是聚会的核心人物' },
+        { data: { i: 5 }, s: 'A. 我是个低调的人<br/>B. 我注重细节' },
+        { data: { i: 6 }, s: 'A. 我常把事情弄得一团糟<br/>B. 我会使用晦涩的文字' },
+        { data: { i: 7 }, s: 'A. 我时常感到沮丧<br/>B. 我会花时间反思事情' },
+        { data: { i: 8 }, s: 'A. 我和其他人在一起时感到自在<br/>B. 我会同情他人的感受' },
+        { data: { i: 9 }, s: 'A. 我能感受到他人的情绪<br/>B. 我对我的工作很严谨' },
+        { data: { i: 10 }, s: 'A. 我很少感到沮丧<br/>B. 我总是主动开始谈话' },
     ],
     randomize_order: false
 }
