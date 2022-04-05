@@ -263,7 +263,7 @@ var main_timeline = [
 jsPsych.init({
     timeline: main_timeline,
     on_finish: function() {
-        jsPsych.data.get().localSave('csv', `data_exp_demo_${subID}.csv`) // download from browser
+        jsPsych.data.get().localSave('csv', `data_${subID}.csv`) // download from browser
         document.getElementById('jspsych-content').innerHTML += '测验结束，感谢您的参与！'
     }
 })
